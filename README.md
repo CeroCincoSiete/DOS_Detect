@@ -9,10 +9,6 @@ Escrita en Python 3, con TUI interactiva basada en [Textual](https://textual.tex
 
 ---
 
-<img width="1787" height="869" alt="imagen" src="https://github.com/user-attachments/assets/172cb140-8563-4fb6-b859-898729894b33" />
-
----
-
 ## ✨ Características
 
 | Módulo | Descripción |
@@ -159,21 +155,7 @@ Se cubren: disparo de cada tipo de ataque, no-alerta bajo umbral, cooldowns, cal
 
 ## 🖼️ Vista previa
 
-```
-┌─── DoS_Detect · Blue Team Network Monitor ────────── modo: SIM ──┐
-│ Paquetes/s  │ Totales   │ Protocolos       │ Top talkers       │
-│    712      │  18,432   │ UDP 9k  TCP 5k…  │ 203.0.113.5  4231 │
-├──────────────────────────────────────────────────────────────────┤
-│ 🚨 ALERTAS RECIENTES  (ATAQUE ACTIVO)                            │
-│ 14:22:03 │ UDP Flood      │ 203.0.113.5 │ 890 pkt/s │ 500 │ …   │
-│ 14:21:57 │ SYN Flood      │ 198.51.100.22 │ 302 pkt/s │ 100 │ … │
-├──────────────────────────────────────────────────────────────────┤
-│ LOG DE TRÁFICO EN VIVO                                           │
-│ 14:22:03 UDP 203.0.113.5 -> 10.0.0.1:53                          │
-│ 14:22:03 TCP-SYN 198.51.100.22 -> 10.0.0.1:80                    │
-└──────────────────────────────────────────────────────────────────┘
-    q Salir   c Limpiar log
-```
+<img width="1787" height="869" alt="imagen" src="https://github.com/user-attachments/assets/172cb140-8563-4fb6-b859-898729894b33" />
 
 ---
 
