@@ -9,6 +9,10 @@ Escrita en Python 3, con TUI interactiva basada en [Textual](https://textual.tex
 
 ---
 
+<img width="1787" height="869" alt="imagen" src="https://github.com/user-attachments/assets/172cb140-8563-4fb6-b859-898729894b33" />
+
+---
+
 ## ✨ Características
 
 | Módulo | Descripción |
