@@ -172,14 +172,3 @@ sudo iptables -A INPUT -s 203.0.113.5 -j DROP
 
 MIT — Úsalo, modifícalo y compártelo. Se agradece atribución si te resulta útil.
 
-## 🙋 Contribuir
-
-PRs bienvenidos. Ideas para roadmap:
-- Detección basada en entropía / anomalía (no solo umbrales)
-- Integración con fail2ban y Suricata
-- Exportador Prometheus para métricas
-- Persistencia histórica en SQLite
-
----
-> **Descargo de responsabilidad:** Herramienta para uso defensivo y de aprendizaje. Úsala **solo** en redes que administres o con autorización explícita.
-"
