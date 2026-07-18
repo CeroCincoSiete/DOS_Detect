@@ -1,4 +1,4 @@
-"# DoS_Detect
+# DoS_Detect
 
 **Herramienta profesional de Blue Team para monitorización de red y detección de ataques DoS/DDoS en tiempo real.**
 Escrita en Python 3, con TUI interactiva basada en [Textual](https://textual.textualize.io/), captura de paquetes con [scapy](https://scapy.net/) y modo forense automático a `.pcap`.
