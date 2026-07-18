@@ -1,0 +1,57 @@
+# ============================================================
+# DoS_Detect - Configuración principal
+# Umbrales, alertas y opciones de captura
+# ============================================================
+
+# Interfaz de red a monitorizar (null = seleccionar interactivamente)
+interface: null
+
+# BPF filter opcional para scapy (deja vacío para capturar todo)
+bpf_filter: ""
+
+# ============================================================
+# Umbrales de detección (paquetes por segundo por IP origen)
+# Cuando se cruzan durante `window_seconds`, se dispara alerta.
+# ============================================================
+thresholds:
+  syn_flood: 100        # SYN pkts/s por IP (TCP half-open)
+  icmp_flood: 200       # ICMP echo request pkts/s por IP
+  udp_flood: 500        # UDP pkts/s por IP
+  http_get_flood: 50    # HTTP GET requests/s por IP (Layer 7)
+
+# Ventana de análisis en segundos (rolling window)
+window_seconds: 5
+
+# Enfriamiento entre alertas de la MISMA (IP, tipo) para evitar spam
+cooldown_seconds: 30
+
+# ============================================================
+# Modo forense: guarda .pcap con los paquetes del ataque
+# ============================================================
+forensics:
+  enabled: true
+  output_dir: "./forensics"
+  # Máximo paquetes por captura forense
+  max_packets: 2000
+
+# ============================================================
+# Alertas externas (webhooks)
+# Deja url en null para desactivar. Auto-detecta Discord/Slack.
+# ============================================================
+webhook:
+  enabled: false
+  url: null             # ej: "https://discord.com/api/webhooks/..." o "https://hooks.slack.com/..."
+  timeout: 5
+
+# ============================================================
+# Modo simulación: genera tráfico sintético para validar el motor
+# sin necesidad de privilegios de red reales.
+# ============================================================
+simulation:
+  enabled: false
+  # Escenarios a ejecutar (uno cada 15s aprox.)
+  scenarios:
+    - syn_flood
+    - icmp_flood
+    - udp_flood
+    - http_get_flood
