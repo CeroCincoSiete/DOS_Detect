@@ -43,8 +43,6 @@ dos_detect/
 │   ├── alerts.py              # WebhookNotifier (Discord/Slack/genérico)
 │   ├── mitigation.py          # Sugerencias iptables/ufw
 │   └── tui.py                 # Dashboard Textual
-├── tests/
-│   └── test_detector.py       # Tests unitarios (no requieren red)
 └── forensics/                 # .pcap generados en tiempo real
 ```
 
